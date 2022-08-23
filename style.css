@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Rubik+Dirt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
+/*Reset*/
+* {
+    box-sizing: border-box;
+}
+
+/*General*/
+html, body {
+    background: #BA3940;
+    font-family: 'PT Sans', sans-serif;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Rubik Dirt', cursive;;
+}
+
+header {
+    height: 100vh;
+}
+
+/*Navbar*/
+#navbar .logo {
+    float: left;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-top: 16px;
+    font-weight: 400;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #FFFFFF
+}
+
+#navbar ul {
+    list-style: none;
+    text-transform: uppercase;
+    float: right;
+}
+
+#navbar li {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    float: left;
+}
+
+#navbar ul li a:hover {
+    background-color: #A0FA93;
+}
+
+/*showcase*/
+#showcase .showcase-img {
+    float: left;
+    width: 50%;
+}
+
+#showcase .showcase-img img {
+    width: 90%;
+}
+
+#showcase .showcase-text {
+    float: right;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+}
+
+#showcase .showcase-text h1 {
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 500px;
+}
+
+#showcase .showcase-text .title-one {
+    font-size: 29px;
+    font-weight: 400px;
+}
+
+#showcase .showcase-text .title-two {
+    color: #841934;
+}
+
+#showcase .showcase-text .large {
+    padding-top: 20px;
+}
+
+/*about*/
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+#about {
+    background: #841934;
+    padding: 100px 0;
+}
+
+.about-title {
+    float: left;
+    width: 45%;
+    padding-top: 340px;
+}
+
+.about-description {
+    float: left;
+    width: 55%;
+}
+
+.about-description .large{
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+/*general*/
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 1rem;
+    padding: 10px 0;
+    line-height: 1.7em;
+}
+
+#contact {
+    padding: 120px 0;
+}
+
+.contact-form{
+    float: left;
+    width: 45%;
+    padding: 20px;
+}
+
+.contact-title {
+    float: right;
+    width: 55%;
+    padding-top: 160px;
+    text-align: center;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form .form-control {
+    width: 100%;
+    padding: 0.375rem, 0.7rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border: none;
+}
+
+/*boton form*/
+.btn {
+    font-size: 15px;
+    padding: 14px, 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-light {
+    background-color: #841934;
+    border: 1px solid #841934;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-light:hover{
+    background: #fff;
+    border: 1px solid #841934;
+    color: #841934   
+}
