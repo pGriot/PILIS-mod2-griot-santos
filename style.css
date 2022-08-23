@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Rubik+Dirt&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap');
 /*Reset*/
 * {
     box-sizing: border-box;
@@ -8,9 +7,9 @@
 
 /*General*/
 html, body {
-    background: #BA3940;
+    background: #064635;
     font-family: 'PT Sans', sans-serif;
-    color: #FFFFFF;
+    color: #F0BB62;
     scroll-behavior: smooth;
 }
 
@@ -33,7 +32,7 @@ header {
 
 #navbar a {
     text-decoration: none;
-    color: #FFFFFF
+    color: #F0BB62
 }
 
 #navbar ul {
@@ -54,17 +53,16 @@ header {
 }
 
 /*showcase*/
-#showcase .showcase-img {
-    float: left;
-    width: 50%;
-}
 
-#showcase .showcase-img img {
-    width: 90%;
+#showcase .container {
+    background-image: url("./recursos/principal.jpg");
+    
+    width: 100%;
+    height: 100%;
 }
 
 #showcase .showcase-text {
-    float: right;
+    float: left;
     width: 50%;
     padding: 20px 20px 20px 40px;
 }
@@ -72,20 +70,19 @@ header {
 #showcase .showcase-text h1 {
     text-transform: uppercase;
     font-size: 46px;
-    font-weight: 500px;
+    font-weight: 200px;
+    background-color: #064635;
 }
 
-#showcase .showcase-text .title-one {
-    font-size: 29px;
-    font-weight: 400px;
-}
-
-#showcase .showcase-text .title-two {
-    color: #841934;
+#showcase .showcase-text .fondo {
+    background-color: #064635;
 }
 
 #showcase .showcase-text .large {
     padding-top: 20px;
+    font-size: 40px;
+    font-weight: 400px;
+    padding-bottom: 100%;
 }
 
 /*about*/
@@ -97,8 +94,12 @@ header {
 }
 
 #about {
-    background: #841934;
+    background: #519259;
     padding: 100px 0;
+}
+
+#about .about-img{
+    width: 100%;
 }
 
 .about-title {
@@ -122,7 +123,7 @@ h2 {
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #F0BB62;
 }
 
 p {
@@ -131,17 +132,18 @@ p {
     line-height: 1.7em;
 }
 
-#contact {
+#registro {
     padding: 120px 0;
+    background-color: #519259;
 }
 
-.contact-form{
+.register-form{
     float: left;
     width: 45%;
     padding: 20px;
 }
 
-.contact-title {
+.register-title {
     float: right;
     width: 55%;
     padding-top: 160px;
@@ -160,6 +162,21 @@ form .form-control {
     border: none;
 }
 
+/*Evento*/
+#evento {
+    padding-top: 20px;
+}
+
+#evento .paseo .paseo-vid{
+    width: 50%;
+    float: left;
+}
+
+#evento .paseo .paseo-description {
+    width: 50%;
+    float: right;
+}
+
 /*boton form*/
 .btn {
     font-size: 15px;
@@ -172,14 +189,16 @@ form .form-control {
 }
 
 .btn-light {
-    background-color: #841934;
-    border: 1px solid #841934;
-    color: #fff;
+    background-color: #064635;
+    border: 1px solid #064635;
+    color: #F0BB62;
     width: 100%;
 }
 
 .btn-light:hover{
-    background: #fff;
-    border: 1px solid #841934;
-    color: #841934   
+    background: #F0BB62;
+    border: 1px solid #F4EEA9;
+    color: #064635
 }
+
+/*Clima*/

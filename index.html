@@ -13,31 +13,21 @@
 <body>
     <header id="mainheader">
         <nav id="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="index.html">Portfolio <span class="secondary">PM</span></a></h1>
+            <img class="container">
+                <a href="index.html" class="logo"><img src="./recursos/flor2.png" alt="Logo"></a>
                 <ul>
-                    <li><a href="#about">Quien soy</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#evento">El Evento</a></li>
+                    <li><a href="#registro">Registrarse</a></li>
                 </ul>
             </div>
         </nav>
 
         <div id="showcase">
             <div class="container">
-                <div class="showcase-img">
-                    <img src="https://i.ibb.co/Yc13gjV/showcase.png" alt="showcase" />
-                </div>
                 <div class="showcase-text">
-                    <h1><span class="title-one">Proyectos</span><br>
-                        <span class="title-two">
-                            Desarrollo</span><br>
-                        Direccion<br>
-                        planificacion<br>
-                        control
-                    </h1>
-                    <p class="large">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati distinctio odio
-                        deserunt perferendis atque earum mollitia velit optio sed fugit? Ratione, voluptatum! Tempore
-                        quasi aliquam quae consequatur reiciendis, debitis voluptatibus.</p>
+                    <h1>PASEO DE LAS FLORES</h1>
+                    <h2 class="large"><span class="fondo">Vení a pasar un flor de día</span></h2>
                 </div>
             </div>
         </div>
@@ -46,51 +36,57 @@
     <section id="about">
         <div class="container">
             <div class="about-title">
-                <h2>Quien soy</h2>
+                <h2>Quienes somos</h2>
             </div>
             <div class="about-description">
-                <p class="large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam ex
-                    eveniet fuga nihil alias sint dolores velit tempore, autem id quaerat pariatur ad quos sapiente
-                    iusto minima, officia maiores!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil distinctio totam blanditiis officiis,
-                    eveniet quibusdam hic ipsa pariatur atque vero facere laborum ut soluta ipsum a dolorum eum in.
-                    Deserunt!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error sapiente architecto
-                    voluptates ducimus ullam beatae eum! Numquam cum earum quam voluptatum, expedita eaque blanditiis
-                    temporibus quaerat, in quo suscipit!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque veritatis a eum nobis, unde
-                    adipisci alias aperiam ullam dignissimos nihil dolorem laudantium esse quidem, non dicta aliquam ex
-                    magni provident. </p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ratione impedit asperiores molestias,
-                    voluptatem laudantium ut, dolore eveniet, dicta sequi possimus odio assumenda iusto necessitatibus
-                    iste pariatur labore. Cumque, magnam.</p>
+                <p class="large">La Asociación de Productores de Plantas Ornamentales de Jujuy (APPOJUY) está compuesta por 50 familias jujeñas que trabajan mancomunadamente para el desarrollo de la Industria Florícola.</p>
+                <br>
+                <img class="about-img" src="./recursos/todos.jpg" alt="toditos">
             </div>
         </div>
     </section>
 
-    <section id="contact">
+<section id="evento">
+    <div class="container">
+        <div class="paseo">
+            <div class="paseo-vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/th_Q1fJuU5c" title="Aniversario del paseo de las flores" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="paseo-description">
+                <h2>¡¡Estamos de aniversario!!</h2>
+                <p class="large">Este mes celebramos un nuevo aniversario de nuestro evento y queremos celebrarlo con toda la comunidad</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="registro">
         <div class="container">
-            <div class="contact-form">
+            <div class="register-form">
                 <form id="formulario">
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" name="name" id="name">
                     </div>
                     <div class="form-group">
-                        <label for="name">Email</label>
-                        <input class="form-control" type="email">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="name">Mensaje</label>
+                        <label for="message">Mensaje</label>
                         <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
                     <button id="enviar" class="btn btn-light">Enviar</button>
                 </form>
             </div>
-            <div class="contact-title">
-                <h2>Contacto</h2>
+            <div class="register-title">
+                <h2>Registrate</h2>
             </div>
         </div>
+    </section>
+    
+    <section class="clima">
+        <h2>clima</h2>
     </section>
 
     <script src="main.js"></script>

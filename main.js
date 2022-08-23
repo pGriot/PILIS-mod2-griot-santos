@@ -6,7 +6,7 @@ function onClick (event) {
       email: document.getElementById('email').value,
       message: document.getElementById('message').value
     }
-    console.log(mensaje);
+    /* console.log(mensaje); */
   
   
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -19,27 +19,21 @@ function onClick (event) {
           console.log(json);
           Swal.fire(
               'Enviado',
-              'Gracias por tu comentario', 
+              'Gracias por registrarte', 
               'success'
           );
-          cleanForm();
-          /* redirectUrl(); */
+          /* cleanForm(); */
       })
       .catch((err) => console.log(err));
   
   }
 
-  /**/
-function cleanForm() {
+
+/* function cleanForm() {
     let formulario = document.getElementById('formulario');    
     formulario.reset();    
 }
-function redirectUrl(){
-    window.location.href = "https://google.com";    
-}
 
-
-
-
+ */
 let boton = document.getElementById("enviar");
 boton.addEventListener("click", onClick);
